@@ -1,20 +1,22 @@
 #!/bin/python3
 try :
-    import multiprocessing
-    import time
-    import os
-    import colorama
-    import requests
-    import urllib.parse
-    import urllib.error
-    import ssl
-    import sys
-    import threading
-    import itertools
-    from pytube import YouTube
-    from bs4 import BeautifulSoup
-    from urllib.request import Request, urlopen
-
+    try:
+        import multiprocessing
+        import time
+        import os
+        import colorama
+        import requests
+        import urllib.parse
+        import urllib.error
+        import ssl
+        import sys
+        import threading
+        import itertools
+        from pytube import YouTube
+        from bs4 import BeautifulSoup
+        from urllib.request import Request, urlopen
+    except ImportError:
+        print("\n\n\t[!] PLEASE RUN './install.sh'")
     # I HAVE NO FUCKIN IDEA
         # LETS CLEAR FOR A MORE WHOLESOME UX
     os.system("clear")
