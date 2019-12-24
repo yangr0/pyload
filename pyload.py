@@ -85,11 +85,12 @@ try :
     t.start()
     try :
         YouTube(url).streams.first().download()
-    except:
-        print("\n\t[!] COULDN'T DOWNLOAD VIDEO, SORRY!")
+        animation = True
+    except KeyError:
+        animation = True
         os.system("clear")
-        sys.exit(0)
-    animation = True
+        print("\n\t[!] COULDN'T DOWNLOAD VIDEO, SORRY!\n\n")
+        exit(0)
 
     print()
     print("\n\t[!] SAVED ( " + data + " )")
